@@ -12,490 +12,517 @@
   </head>
   <body>
 
-  <div class="container-fluid mt-3">
-
-    <div class="row">
-      <!-- CONTAINER ESQUERDA -->
-        <div class="col-sm-6  ms-5  text-black">
-            <div class="col-sm-12 p-3 text-black">
-                Nome Completo/Razão Social
-                    <input type="text" class="form-control form-control-lg" id="nome" placeholder="" name="nome" required>
-            </div>
-            <div class="input col ">
-              <div class="row ">
-                  <div class="col">
-                      <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Homem Cis
-                              </label>
+  <div class="col container-sm-12 bg-secondary">
+    <div class="row mt-3 d-flex justify-content-center align-items-center text-center">
+      <div class="col-auto">
+        <img src="./img/prefeitura.png" class="img" alt="prefeitura logo" style="height: 100px;">
+      </div>
+      <div class="col-auto justify-content-center text-white mb-0 fw-bold ">
+        <p class="mb-0 fw-bold">
+          ADM<br>CADASTRO CULTURAL</p>
+      </div>
+      <div class="col-auto">
+        <img src="./img/fc-cultura.png" class="img" alt="fundacao-cultura-logo" style="max-height: 150px;">
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center " id="tabela-formulario">
+      <div class="col-sm-12  mt-3 bg-light">
+        <div class="row">
+          <!-- CONTAINER ESQUERDA -->
+            <div class="col-sm-6 mt-5 text-black">
+                <div class="col-sm-12 p-3 text-black">
+                    Nome Completo/Razão Social
+                        <input type="text" class="form-control form-control-lg" id="nome" placeholder="" name="nome" required>
+                </div>
+                <div class="input col ">
+                  <div class="row ">
+                      <div class="col">
+                          <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Homem Cis
+                                  </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                            <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Mulher Cis
+                                  </label>
+                            </div>
+                      </div>
+                      <div class="col">
+                              <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Homem Trans
+                                  </label>
+                          </div>
+                      </div>
+                      <div class="col">
+                              <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Mulher Trans
+                                  </label>
+                          </div>
                       </div>
                   </div>
-                  <div class="col">
-                        <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Mulher Cis
-                              </label>
+                </div>
+
+                <div class="col-sm-12 p-3 text-black">
+                  E-mail
+                    <input type="text" class="form-control form-control-lg" placeholder="">
+                </div>
+                <div class="col-sm-12 p-3 text-black">
+                  Orientação Sexual
+                    <input type="text" class="form-control form-control-lg" placeholder="">
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6  ms-5 text-black">
+                      Telefone Fixo
+                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000">
+                    </div>  
+                    <div class="col-sm-6  ms-5 text-black">
+                      Celular
+                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 90000-0000">
+                    </div>  
+                  </div>
+                </div>
+                <div class="col-sm-6 p-3 ms-5 text-black">
+                  CEP
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col-sm-12 p-3 text-black">
+                  Endereço
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6 text-black">
+                      Bairro
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6  text-black">
+                      Cidade
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6 text-black">
+                      UF
+                        <input type="text" class="form-control form-control-lg" placeholder="Ex: PE">
+                    </div>
+                    <div class="col-sm-6  text-black">
+                      Número
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 p-3 text-black">
+                  Ponto de Referência
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6 text-black">
+                      RG
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6  text-black">
+                    Orgão Emissor
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6 text-black">
+                      PIS/PASEP
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6  text-black">
+                      NIT
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="input col p-3">
+                  <div class="row">
+                    <div class="col-sm-2" >Pessoa com PCD</div>
+                      <div class="col-sm-1">
+                          <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Sim
+                                  </label>
+                          </div>
+                      </div>
+                      <div class="col-sm-1">
+                              <div class="form-check me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Não
+                                  </label>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-12  ms-5 text-black">
+                  Caso tenha marcado SIM, qual tipo de deficiência?
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+
+
+
+            </div>
+          
+            <!-- CONTAINER DIREITA -->
+            <div class="col-sm-6 mt-5 text-black">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-sm-6  ms-5">
+                      CPF/CNPJ
+                        <input type="text" class="form-control form-control-lg" placeholder="">
+                    </div>  
+                    <div class="col p-3 pl-5">
+                        <div class="form-check p-1 me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Física
+                                  </label>
+                        </div>
+                        <div class="form-check p-1 me-3">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Física
+                                  </label>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      Facebook
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Instagram
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      TikTok
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Twitter
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      YouTube
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Blog
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12  ms-5">
+                  Profissão
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col-sm-12 p-3 ms-5">
+                  <form action="/action_page.php">
+                    Formação:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3 ms-5">
+                  <form action="/action_page.php">
+                    Média Salarial:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3 ms-5">
+                  <form action="/action_page.php">
+                    Eixo Cultura:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3 ms-5">
+                  <form action="/action_page.php">
+                    Opção de Raça/Etnia:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <label for="comment">Histórico Simplificado:</label>
+                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="col-sm-12 p-3">
+                  <p>
+                    <span>Aceito todas as </span>
+                    <span class="text-danger">políticas de privacidade.</span><br>
+                    <span class="text-danger" >Ao clicar em (Aceito) você partcipará automáticamente das etapas para a escolha do conselho cultural.</span> 
+                  </p>
+
+                  <div class="row mt-5 " >
+                        <div class="col-sm-1 ">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Aceito
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Não Aceito
+                                    </label>
+                            </div>
                         </div>
                   </div>
-                  <div class="col">
-                          <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Homem Trans
-                              </label>
-                      </div>
-                  </div>
-                  <div class="col">
-                          <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Mulher Trans
-                              </label>
-                      </div>
-                  </div>
-              </div>
+                </div>
+
             </div>
 
-            <div class="col-sm-12 p-3 text-black">
-              E-mail
-                <input type="text" class="form-control form-control-lg" placeholder="">
-            </div>
-            <div class="col-sm-12 p-3 text-black">
-              Orientação Sexual
-                <input type="text" class="form-control form-control-lg" placeholder="">
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6  ms-5 text-black">
-                  Telefone Fixo
-                    <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000">
-                </div>  
-                <div class="col-sm-6  ms-5 text-black">
-                  Celular
-                    <input type="tel" class="form-control form-control-lg" placeholder="(00) 90000-0000">
-                </div>  
-              </div>
-            </div>
-            <div class="col-sm-6 p-3 ms-5 text-black">
-              CEP
-                <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="col-sm-12 p-3 text-black">
-              Endereço
-                <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6 text-black">
-                  Bairro
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6  text-black">
-                  Cidade
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6 text-black">
-                  UF
-                    <input type="text" class="form-control form-control-lg" placeholder="Ex: PE">
-                </div>
-                <div class="col-sm-6  text-black">
-                  Número
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 p-3 text-black">
-              Ponto de Referência
-                <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6 text-black">
-                  RG
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6  text-black">
-                 Orgão Emissor
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6 text-black">
-                  PIS/PASEP
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6  text-black">
-                  NIT
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="input col p-3">
-              <div class="row">
-                <div class="col-sm-2" >Pessoa com PCD</div>
-                  <div class="col-sm-1">
-                      <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Sim
-                              </label>
+      <div class="container-fluid mt-3">
+
+        <div class="row">
+
+          <!-- TABELA ESQUERDA -->
+            <div class="col-sm-6 ms-5 text-black">
+            
+              <ul class="list-group">
+                <li class="list-group-item"> <p>
+                  <span>ANEXO 1 Documentação rg, cpf, comprovante de residência, currículo, Caso tenha marcado sim em PCD, Inserir comprovação opcional  </span>
+                  <span class="text-danger">(Tamanho Máximo de 6 mb por imagem.)</span><br>
+                </p></li>
+                <li class="list-group-item">
+                  <div class="accordion" id="accordionLeft">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ANEXO 1.1
+                          </button>
+                        </h5>
                       </div>
-                  </div>
-                  <div class="col-sm-1">
-                          <div class="form-check me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Não
-                              </label>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLeft">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, 
+                        </div>
                       </div>
-                  </div>
-              </div>
-            </div>
-            <div class="col-sm-12  ms-5 text-black">
-              Caso tenha marcado SIM, qual tipo de deficiência?
-                <input type="text" class="form-control form-control-lg">
-            </div>
-
-
-
-        </div>
-      
-        <!-- CONTAINER DIREITA -->
-        <div class="col-sm-6 p-3 text-black">
-            <div class="col">
-              <div class="row">
-                <div class="col-sm-6  ms-5">
-                  CPF/CNPJ
-                    <input type="text" class="form-control form-control-lg" placeholder="">
-                </div>  
-                <div class="col p-3 pl-5">
-                    <div class="form-check p-1 me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Pessoa Física
-                              </label>
                     </div>
-                    <div class="form-check p-1 me-3">
-                          <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                              <label class="form-check-label" for="opcao1">
-                                  Pessoa Física
-                              </label>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ANEXO 1.2
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLeft">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, 
+                        </div>
+                      </div>
                     </div>
-                </div>
-              </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ANEXO 1.3
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLeft">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ANEXO 1.4
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLeft">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ANEXO 1.5
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLeft">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              
             </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6">
-                  Facebook
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6">
-                  Instagram
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6">
-                  TikTok
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6">
-                  Twitter
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col p-3">
-              <div class="row">
-                <div class="col-sm-6">
-                  YouTube
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-                <div class="col-sm-6">
-                  Blog
-                    <input type="text" class="form-control form-control-lg">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12  ms-5">
-              Profissão
-                <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="col-sm-12 p-3 ms-5">
-              <form action="/action_page.php">
-                Formação:
-                <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
-                  <option>selecione</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <br>
-              </form>
-            </div>
-            <div class="col-sm-12 p-3 ms-5">
-              <form action="/action_page.php">
-                Média Salarial:
-                <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
-                  <option>selecione</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <br>
-              </form>
-            </div>
-            <div class="col-sm-12 p-3 ms-5">
-              <form action="/action_page.php">
-                Eixo Cultura:
-                <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
-                  <option>selecione</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <br>
-              </form>
-            </div>
-            <div class="col-sm-12 p-3 ms-5">
-              <form action="/action_page.php">
-                Opção de Raça/Etnia:
-                <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
-                  <option>selecione</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                </select>
-                <br>
-              </form>
-            </div>
-            <div class="col-sm-12 p-3">
-              <label for="comment">Histórico Simplificado:</label>
-              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
-            </div>
-            <br><br><br><br><br><br>
-            <div class="col-sm-12 p-3">
-              <p>
+
+            <!-- TABELA DIREITA -->
+            <div class="col-sm-6  ms-5 text-black">
+              <ul class="list-group">
+                <li class="list-group-item"><p>
                 <span>Aceito todas as </span>
                 <span class="text-danger">políticas de privacidade.</span><br>
                 <span class="text-danger" >Ao clicar em (Aceito) você partcipará automáticamente das etapas para a escolha do conselho cultural.</span> 
-              </p>
-
-              <div class="row mt-5 " >
-                    <div class="col-sm-1 ">
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                                <label class="form-check-label" for="opcao1">
-                                    Aceito
-                                </label>
-                        </div>
+              </p></li>
+              <li class="list-group-item">
+                <div class="accordion" id="accordionRight">
+                  <div class="card">
+                    <div class="card-header" id="headingTwoOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne">
+                          ANEXO 2.1
+                        </button>
+                      </h5>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="form-check me-3">
-                            <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                                <label class="form-check-label" for="opcao1">
-                                    Não Aceito
-                                </label>
-                        </div>
+                    <div id="collapseTwoOne" class="collapse show" aria-labelledby="headingTwoOne" data-parent="#accordionRight">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
                     </div>
-              </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwoTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo">
+                          ANEXO 2.2
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwoTwo" class="collapse" aria-labelledby="headingTwoTwo" data-parent="#accordionRight">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwoThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoThree" aria-expanded="false" aria-controls="collapseTwoThree">
+                          ANEXO 2.3
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwoThree" class="collapse" aria-labelledby="headingTwoThree" data-parent="#accordionRight">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwoFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoFour" aria-expanded="false" aria-controls="collapseTwoFour">
+                          ANEXO 2.4
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwoFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionRight">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwoFive">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoFive" aria-expanded="false" aria-controls="collapseTwoFive">
+                          ANEXO 2.5
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseTwoFive" class="collapse" aria-labelledby="headingTwoFive" data-parent="#accordionRight">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </div>
-
-        </div>
-
-  <div class="container-fluid mt-3">
-
-    <div class="row">
-
-      <!-- TABELA ESQUERDA -->
-        <div class="col-sm-6 ms-5 text-black">
-         
-          <ul class="list-group">
-            <li class="list-group-item"> <p>
-              <span>ANEXO 1 Documentação rg, cpf, comprovante de residência, currículo, Caso tenha marcado sim em PCD, Inserir comprovação opcional  </span>
-              <span class="text-danger">(Tamanho Máximo de 6 mb por imagem.)</span><br>
-            </p></li>
-            <li class="list-group-item">
-              <div class="accordion" id="accordionLeft">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        ANEXO 1.1
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLeft">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, 
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        ANEXO 1.2
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLeft">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, 
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        ANEXO 1.3
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLeft">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, 
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingFour">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        ANEXO 1.4
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLeft">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, 
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingFive">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        ANEXO 1.5
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLeft">
-                    <div class="card-body">
-                      Anim pariatur cliche reprehenderit, 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          
-        </div>
-
-        <!-- TABELA DIREITA -->
-        <div class="col-sm-6  ms-5 text-black">
-          <ul class="list-group">
-            <li class="list-group-item"><p>
-            <span>Aceito todas as </span>
-            <span class="text-danger">políticas de privacidade.</span><br>
-            <span class="text-danger" >Ao clicar em (Aceito) você partcipará automáticamente das etapas para a escolha do conselho cultural.</span> 
-          </p></li>
-          <li class="list-group-item">
-            <div class="accordion" id="accordionRight">
-              <div class="card">
-                <div class="card-header" id="headingTwoOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwoOne">
-                      ANEXO 2.1
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwoOne" class="collapse show" aria-labelledby="headingTwoOne" data-parent="#accordionRight">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, 
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwoTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoTwo" aria-expanded="false" aria-controls="collapseTwoTwo">
-                      ANEXO 2.2
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwoTwo" class="collapse" aria-labelledby="headingTwoTwo" data-parent="#accordionRight">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, 
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwoThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoThree" aria-expanded="false" aria-controls="collapseTwoThree">
-                      ANEXO 2.3
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwoThree" class="collapse" aria-labelledby="headingTwoThree" data-parent="#accordionRight">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, 
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwoFour">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoFour" aria-expanded="false" aria-controls="collapseTwoFour">
-                      ANEXO 2.4
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwoFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionRight">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, 
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingTwoFive">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwoFive" aria-expanded="false" aria-controls="collapseTwoFive">
-                      ANEXO 2.5
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwoFive" class="collapse" aria-labelledby="headingTwoFive" data-parent="#accordionRight">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </div>
-        
-  </div>
-        <div class="col-sm-12 p-3">
-          <button class="btn btn-primary w-100" type="submit">ENVIAR DADOS  <img src="./img/envio.png" class="img" alt="envio favicon" style="height: 24px;"> </button>
-         
-        </div>
             
+      </div>
+            <div class="col-sm-12 p-3">
+              <button class="btn btn-primary w-100" type="submit">ENVIAR DADOS  <img src="./img/envio.png" class="img" alt="envio favicon" style="height: 24px;"> </button>
+            
+            </div>
+                
+        </div>
+        </div>
+      </div>
     </div>
-</div>
-
+    <div class="col-sm-12 d-flex justify-content-center mt-5">
+      <span>
+        <p class="text-center text-white"> 
+          FUNDAÇÃO DE CULTURA DE CAMARAGIBE<br>
+          Av. Dr. Pierre Collier - Vila da Fábrica, Camaragibe - PE, 54759-560<br>
+          Email - fundacaodecultura@camaragibe.pe.gov.br, Fone: (81) 99724-4264 <br>
+          CNPJ: 01.947.273/0001-00<br>
+          © 2019 DTI - Diretoria de Tecnologia da Informação. - Todos os Direitos Reservados<br>
+        </p>
+      </span>
+    </div>
+      
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
