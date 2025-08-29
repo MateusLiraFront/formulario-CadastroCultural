@@ -12,11 +12,320 @@
   </head>
   <body>
 
-  <div class="container-sm-12 bg-secondary">
-        <div class="col">
-            asdasdasd
+  <div class="col bg-secondary">
+  
+    <div class="container-fluid mt-3">
+      <h1>Two Unequal Responsive Columns</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+      <div class="row">
+        
+        <div class="col-sm-6  bg-primary text-white">
+          
+                <!-- CONTAINER DIREITA -->
+            <div class="col-sm-13  mt-4 text-black">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-sm-6 ">
+                      CPF/CNPJ
+                        <input type="text" class="form-control form-control-lg" placeholder="">
+                    </div>  
+                    <div class="col p-3 pl-5">
+                        <div class="form-check p-1 me-3" style="font-weight: 400">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Física
+                                  </label>
+                        </div>
+                        <div class="form-check p-1 me-3" style="font-weight: 400">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Jurídica
+                                  </label>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      Facebook
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Instagram
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      TikTok
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Twitter
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      YouTube
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Blog
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 ">
+                  Profissão
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Formação:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Média Salarial:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Eixo Cultura:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3 ">
+                  <form action="/action_page.php">
+                    Opção de Raça/Etnia:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <label for="comment">Histórico Simplificado:</label>
+                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="col-sm-12 p-3">
+                  <p>
+                    <span>Aceito todas as </span>
+                    <span class="text-primary">Políticas de Privacidade.</span><br>
+                    <span class="text-danger" >Ao clicar em (Aceito) você partcipará automáticamente das etapas para a escolha do conselho cultural.</span> 
+                  </p>
+
+                  <div class="row mt-5 " >
+                        <div class="col-sm-2 ">
+                            <div class="form-check me-3" style="font-weight: 400">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Aceito
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check me-3" style="font-weight: 400">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Não Aceito
+                                    </label>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+            </div>
+
         </div>
+
+
+        <div class="col-sm-6 bg-dark text-white">
+          
+          <!-- CONTAINER DIREITA -->
+            <div class="col-sm-13  mt-4 text-black">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-sm-6 ">
+                      CPF/CNPJ
+                        <input type="text" class="form-control form-control-lg" placeholder="">
+                    </div>  
+                    <div class="col p-3 pl-5">
+                        <div class="form-check p-1 me-3" style="font-weight: 400">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Física
+                                  </label>
+                        </div>
+                        <div class="form-check p-1 me-3" style="font-weight: 400">
+                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                  <label class="form-check-label" for="opcao1">
+                                      Pessoa Jurídica
+                                  </label>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      Facebook
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Instagram
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      TikTok
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Twitter
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-3">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      YouTube
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                    <div class="col-sm-6">
+                      Blog
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 ">
+                  Profissão
+                    <input type="text" class="form-control form-control-lg">
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Formação:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Média Salarial:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <form action="/action_page.php">
+                    Eixo Cultura:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3 ">
+                  <form action="/action_page.php">
+                    Opção de Raça/Etnia:
+                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                      <option>selecione</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <br>
+                  </form>
+                </div>
+                <div class="col-sm-12 p-3">
+                  <label for="comment">Histórico Simplificado:</label>
+                  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="col-sm-12 p-3">
+                  <p>
+                    <span>Aceito todas as </span>
+                    <span class="text-primary">Políticas de Privacidade.</span><br>
+                    <span class="text-danger" >Ao clicar em (Aceito) você partcipará automáticamente das etapas para a escolha do conselho cultural.</span> 
+                  </p>
+
+                  <div class="row mt-5 " >
+                        <div class="col-sm-2 ">
+                            <div class="form-check me-3" style="font-weight: 400">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Aceito
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-check me-3" style="font-weight: 400">
+                                <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                                    <label class="form-check-label" for="opcao1">
+                                        Não Aceito
+                                    </label>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+      </div>
     </div>
+  
+  
+  </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
