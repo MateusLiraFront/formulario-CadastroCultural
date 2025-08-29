@@ -148,7 +148,7 @@
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoEmail" class="form-label">E-mail</label>
-                    <input type="text" class="form-control form-control-lg" id="campoEmail" placeholder="" name="">
+                    <input type="text" class="form-control form-control-lg" id="campoEmail" placeholder="" name="email" required>
                     <div class="invalid-feedback">
                             * O campo Email é obrigatório.
                     </div>
@@ -156,7 +156,7 @@
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoOrientacaoSexual" class="form-label">Orientação Sexual</label>
-                    <input type="text" class="form-control form-control-lg" id="campoOrientacao" placeholder="">
+                    <input type="text" class="form-control form-control-lg" id="campoOrientacao" placeholder="" name="sexo" required>
                     <div class="invalid-feedback">
                             * O campo é obrigatório.
                     </div>
@@ -166,34 +166,34 @@
                   <div class="row">
                     <div class="col-sm-6  text-black">          
                         <label for="campoTelFixo" class="form-label">Telefone Fixo</label>
-                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000">
+                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000" name="telfixo" required>
                     </div>  
                     <div class="col-sm-6 text-black">                      
                         <label for="campoTelCel" class="form-label">Celular</label>
-                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 90000-0000">
+                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 90000-0000" name="telcel" required>
                     </div>  
                   </div>
                 </div>
 
                 <div class="col-sm-6 p-3 text-black">
                     <label for="campoCep" class="form-label">CEP</label>
-                    <input type="text" class="form-control form-control-lg">
+                    <input type="text" class="form-control form-control-lg" name="cep" required>
                 </div>
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoEndereco" class="form-label">Endereço</label>
-                    <input type="text" class="form-control form-control-lg">
+                    <input type="text" class="form-control form-control-lg" name="endereco" required>
                 </div>
 
                 <div class="col p-3">
                   <div class="row">
                     <div class="col-sm-6 text-black">
                         <label for="campoBairro" class="form-label">Bairro</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="bairro" required>
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoCidade" class="form-label">Cidade</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="cidade" required>
                     </div>
                   </div>
                 </div>
@@ -202,30 +202,30 @@
                   <div class="row">
                     <div class="col-sm-6 text-black">
                         <label for="campoUF" class="form-label">UF</label>
-                        <input type="text" class="form-control form-control-lg" placeholder="Ex: PE">
+                        <input type="text" class="form-control form-control-lg" placeholder="Ex: PE" name="uf" required>
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoNumero" class="form-label">Número</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="numero" required>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoReferencia" class="form-label">Ponto de Referência</label>
-                    <input type="text" class="form-control form-control-lg">
+                    <input type="text" class="form-control form-control-lg" name="referencia" required>
                 </div>
 
                 <div class="col p-3">
                   <div class="row">
                     <div class="col-sm-6 text-black">
                         <label for="campoRG" class="form-label">RG</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="rg" required>
                     </div>
                     
                     <div class="col-sm-6  text-black">
                         <label for="campoOrgEmissor" class="form-label">Orgão Emissor</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="orgEmissor" required>
                     </div>
                   </div>
                 </div>
@@ -234,11 +234,11 @@
                   <div class="row">
                     <div class="col-sm-6 text-black">
                         <label for="campoPis" class="form-label">PIS/PASEP</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="pis" required>
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoNit" class="form-label">NIT</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="nit" required>
                     </div>
                   </div>
                 </div>
@@ -266,8 +266,8 @@
                 </div>
 
                 <div class="col-sm-12 text-black">
-                  Caso tenha marcado SIM, qual tipo de deficiência?
-                    <input type="text" class="form-control form-control-lg">
+                    <label for="campoDeficiencia" class="form-label">Caso tenha marcado SIM, qual tipo de deficiência?</label>
+                    <input type="text" class="form-control form-control-lg" name="deficiencia">
                 </div>
 
             </div>
@@ -279,18 +279,18 @@
 
                     <div class="col-sm-6 ">
                         <label for="campoCpf" class="form-label">CPF/CNPJ</label>
-                        <input type="text" class="form-control form-control-lg" placeholder="">
+                        <input type="text" class="form-control form-control-lg" placeholder="" name="cpf" required>
                     </div> 
 
                     <div class="col p-3 pl-5">
                         <div class="form-check p-1 me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcao" id="fisica" name="tipoPessoa">
                                   <label class="form-check-label" for="opcao1">
                                       Pessoa Física
                                   </label>
                         </div>
                         <div class="form-check p-1 me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcao" id="juridica" name="tipoPessoa">
                                   <label class="form-check-label" for="opcao1">
                                       Pessoa Jurídica
                                   </label>
@@ -304,12 +304,12 @@
                   <div class="row">
                     <div class="col-sm-6">
                         <label for="campoFacebook" class="form-label">Facebook</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="facebook">
                     </div>
 
                     <div class="col-sm-6">
                         <label for="campoInstagram" class="form-label">Instagram</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="instagram">
                     </div>
                   </div>
                 </div>
@@ -318,12 +318,12 @@
                   <div class="row">
                     <div class="col-sm-6">
                         <label for="campoTiktok" class="form-label">TikTok</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="tiktok">
                     </div>
 
                     <div class="col-sm-6">
                         <label for="campoTwitter" class="form-label">Twitter</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="twitter">
                     </div>
                   </div>
                 </div>
@@ -332,25 +332,25 @@
                   <div class="row">
                     <div class="col-sm-6">
                         <label for="campoYoutube" class="form-label">Youtube</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="youtube">
                     </div>
 
                     <div class="col-sm-6">
                         <label for="campoBlog" class="form-label">Blog</label>
-                        <input type="text" class="form-control form-control-lg">
+                        <input type="text" class="form-control form-control-lg" name="blog">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-sm-12 ">
                     <label for="campoProfissao" class="form-label">Profissão</label>
-                    <input type="text" class="form-control form-control-lg">
+                    <input type="text" class="form-control form-control-lg" name="profissao" required>
                 </div>
 
                 <div class="col-sm-12 p-3">
                   <form action="/action_page.php">
                     <label for="campoFormacao" class="form-select">Formação</label>
-                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                    <select class="form-select form-select-lg w-100" id="select1" name="formacao" placeholder=" selecione" required>
                       <option>--Selecione--</option>
                       <option>2</option>
                       <option>3</option>
@@ -363,7 +363,7 @@
                 <div class="col-sm-12 p-3">
                   <form action="/action_page.php">
                     <label for="campoSalario" class="form-select">Média Salarial</label>
-                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                    <select class="form-select form-select-lg w-100" id="select1" name="salario" placeholder=" selecione" required>
                       <option>--Selecione--</option>
                       <option>2</option>
                       <option>3</option>
@@ -376,7 +376,7 @@
                 <div class="col-sm-12 p-3">
                   <form action="/action_page.php">
                     <label for="campoEixoCultural" class="form-select">Eixo Cultural</label>
-                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                    <select class="form-select form-select-lg w-100" id="select1" name="eixoCultural" placeholder=" selecione" required>
                       <option>--Selecione--</option>
                       <option>2</option>
                       <option>3</option>
@@ -388,7 +388,7 @@
                 <div class="col-sm-12 p-3 ">
                   <form action="/action_page.php">
                     <label for="campo" class="form-label">Opção de Raça/Etnia</label>
-                    <select class="form-select form-select-lg w-100" id="select1" name="selectList1" placeholder=" selecione">
+                    <select class="form-select form-select-lg w-100" id="select1" name="etnia" placeholder=" selecione" required>
                       <option>--Selecione--</option>
                       <option>2</option>
                       <option>3</option>
@@ -404,7 +404,7 @@
                 </div>
                 
                 <br><br><br><br><br><br>
-                <div class="col-sm-12 p-3">
+                <div class="col-sm-12 p-3 mt-5">
                   <p>
                     <span>Aceito todas as </span>
                     <span class="text-primary">Políticas de Privacidade.</span><br>
@@ -436,8 +436,9 @@
         </div>
         </div>
         
-      <div class="container-fluid mt-3">
-
+        
+      <div class="container-fluid mt-5">
+        <hr class="linha-tracejada my-4" style="border-top: 2px solid #000">
       <div class="row">
 
           <!-- TABELA ESQUERDA -->
