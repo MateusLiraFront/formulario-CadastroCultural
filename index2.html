@@ -166,11 +166,14 @@
                   <div class="row">
                     <div class="col-sm-6  text-black">          
                         <label for="campoTelFixo" class="form-label">Telefone Fixo</label>
-                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000" name="telfixo" required>
+                        <input type="tel" class="form-control form-control-lg" placeholder="(00) 0000-0000" name="telfixo">
                     </div>  
                     <div class="col-sm-6 text-black">                      
                         <label for="campoTelCel" class="form-label">Celular</label>
                         <input type="tel" class="form-control form-control-lg" placeholder="(00) 90000-0000" name="telcel" required>
+                            <div class="invalid-feedback">
+                              * O campo celular é obrigatório.
+                            </div>
                     </div>  
                   </div>
                 </div>
@@ -178,11 +181,15 @@
                 <div class="col-sm-6 p-3 text-black">
                     <label for="campoCep" class="form-label">CEP</label>
                     <input type="text" class="form-control form-control-lg" name="cep" required>
+                        
                 </div>
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoEndereco" class="form-label">Endereço</label>
                     <input type="text" class="form-control form-control-lg" name="endereco" required>
+                          <div class="invalid-feedback">
+                            * O campo endereço é obrigatório.
+                          </div>
                 </div>
 
                 <div class="col p-3">
@@ -190,10 +197,16 @@
                     <div class="col-sm-6 text-black">
                         <label for="campoBairro" class="form-label">Bairro</label>
                         <input type="text" class="form-control form-control-lg" name="bairro" required>
+                            <div class="invalid-feedback">
+                                * O campo bairro é obrigatório.
+                            </div>
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoCidade" class="form-label">Cidade</label>
                         <input type="text" class="form-control form-control-lg" name="cidade" required>
+                            <div class="invalid-feedback">
+                                * O campo cidade é obrigatório.
+                            </div>
                     </div>
                   </div>
                 </div>
@@ -203,17 +216,20 @@
                     <div class="col-sm-6 text-black">
                         <label for="campoUF" class="form-label">UF</label>
                         <input type="text" class="form-control form-control-lg" placeholder="Ex: PE" name="uf" required>
+                            <div class="invalid-feedback">
+                              * O campo uf é obrigatório.
+                            </div>
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoNumero" class="form-label">Número</label>
-                        <input type="text" class="form-control form-control-lg" name="numero" required>
+                        <input type="text" class="form-control form-control-lg" name="numero">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-sm-12 p-3 text-black">
                     <label for="campoReferencia" class="form-label">Ponto de Referência</label>
-                    <input type="text" class="form-control form-control-lg" name="referencia" required>
+                    <input type="text" class="form-control form-control-lg" name="referencia">
                 </div>
 
                 <div class="col p-3">
@@ -234,11 +250,11 @@
                   <div class="row">
                     <div class="col-sm-6 text-black">
                         <label for="campoPis" class="form-label">PIS/PASEP</label>
-                        <input type="text" class="form-control form-control-lg" name="pis" required>
+                        <input type="text" class="form-control form-control-lg" name="pis">
                     </div>
                     <div class="col-sm-6  text-black">
                         <label for="campoNit" class="form-label">NIT</label>
-                        <input type="text" class="form-control form-control-lg" name="nit" required>
+                        <input type="text" class="form-control form-control-lg" name="nit">
                     </div>
                   </div>
                 </div>
@@ -280,20 +296,26 @@
                     <div class="col-sm-6 ">
                         <label for="campoCpf" class="form-label">CPF/CNPJ</label>
                         <input type="text" class="form-control form-control-lg" placeholder="" name="cpf" required>
+                         <div class="invalid-feedback">
+                            * O campo cpf é obrigatório.
+                        </div>
                     </div> 
 
                     <div class="col p-3 pl-5">
                         <div class="form-check p-1 me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="fisica" name="tipoPessoa">
+                              <input class="form-check-input" type="radio" name="opcao" id="pessoaf" name="pessoafj">
                                   <label class="form-check-label" for="opcao1">
                                       Pessoa Física
                                   </label>
                         </div>
                         <div class="form-check p-1 me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="juridica" name="tipoPessoa">
+                              <input class="form-check-input" type="radio" name="opcao" id="pessoaj" name="pessoafj">
                                   <label class="form-check-label" for="opcao1">
                                       Pessoa Jurídica
                                   </label>
+                        </div>
+                         <div class="invalid-feedback">
+                            * O campo cpf/cnpj é obrigatório.
                         </div>
                     </div>
 
@@ -356,6 +378,9 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
+                        <div class="invalid-feedback">
+                            * O campo formação é obrigatório.
+                        </div>
                     <br>
                   </form>
                 </div>
@@ -382,6 +407,9 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
+                        <div class="invalid-feedback">
+                            * O campo eixo cultural é obrigatório.
+                        </div>
                     <br>
                   </form>
                 </div>
@@ -394,13 +422,19 @@
                       <option>3</option>
                       <option>4</option>
                     </select>
+                        <div class="invalid-feedback">
+                            * O campo etnia é inválido.
+                        </div>
                     <br>
                   </form>
                 </div>
 
                 <div class="col-sm-12 p-3">
                   <label for="comment">Histórico Simplificado:</label>
-                  <textarea class="form-control" rows="5" id="comment" name="comentario"></textarea>
+                  <textarea class="form-control" rows="5" id="comment" name="comentario" required></textarea>
+                      <div class="invalid-feedback">
+                          * O campo histórico é obrigatório.
+                      </div>
                 </div>
                 
                 <br><br><br><br><br><br>
@@ -414,8 +448,8 @@
                   <div class="row mt-5 " >
                       <div class="col-sm-2 ">
                           <div class="form-check me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                                <label class="form-check-label" for="opcao1">
+                              <input class="form-check-input" type="radio" name="opcao" id="aceito" required>
+                                <label class="form-check-label" for="aceito">
                                     Aceito
                                 </label>
                           </div>
@@ -423,8 +457,8 @@
 
                       <div class="col-sm-6">
                           <div class="form-check me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
-                                <label class="form-check-label" for="opcao1">
+                              <input class="form-check-input" type="radio" name="opcao" id="naoAceito">
+                                <label class="form-check-label" for="naoAceito">
                                     Não Aceito
                                 </label>
                           </div>
