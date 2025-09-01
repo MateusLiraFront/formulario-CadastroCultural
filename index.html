@@ -54,11 +54,13 @@
                 </div>
 
                 <div class="input col mt-3">
-                  
+                  <div class="invalid-feedback">
+                            * O campo é obrigatório.
+                    </div>
                       <div class="row">
                         <div class="col">
                           <div class="form-check " style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="hcis" required>
                                   <label class="form-check-label" for="opcao1">
                                     <p class="fontForm"> Homem Cis </p>
                                   </label>
@@ -66,7 +68,7 @@
                         </div>
                         <div class="col">
                           <div class="form-check " style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="mcis" required>
                                   <label class="form-check-label" for="opcao1">
                                      <p class="fontForm"> Mulher Cis</p>
                                   </label>
@@ -74,7 +76,7 @@
                         </div>
                         <div class="col">
                           <div class="form-check" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="htrans">
                                   <label class="form-check-label" for="opcao1">
                                      <p class="fontForm"> Homem Trans </p>
                                   </label>
@@ -82,7 +84,7 @@
                         </div>
                         <div class="col">
                           <div class="form-check" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="mtrans">
                                   <label class="form-check-label" for="opcao1">
                                       <p class="fontForm">Mulher Trans</p>
                                   </label>
@@ -93,7 +95,7 @@
                   <div class="row ">
                       <div class="col">
                           <div class="form-check me-3">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="nbinario">
                                   <label class="form-check-label" for="opcao1" style="font-weight: 400">
                                       <p class="fontForm">Não Binário</p>
                                   </label>
@@ -101,7 +103,7 @@
                       </div>
                       <div class="col">
                           <div class="form-check me-3">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="ndeclarado">
                                   <label class="form-check-label" for="opcao1" style="font-weight: 400">
                                       <p class="fontForm">Não quis declarar</p>
                                   </label>
@@ -109,7 +111,7 @@
                       </div>
                       <div class="col">
                           <div class="form-check me-3">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoSexual" id="outro">
                                   <label class="form-check-label" for="opcao1" style="font-weight: 400">
                                       <p class="fontForm">Outro</p>
                                   </label>
@@ -128,10 +130,8 @@
 
                 <div class="col-sm-12 mt-3 text-black">
                     <label for="campoOrientacaoSexual" class="form-label">Orientação Sexual</label>
-                    <input type="text" class="form-control form-control" id="campoOrientacao" placeholder="" name="sexo" required>
-                    <div class="invalid-feedback">
-                            * O campo é obrigatório.
-                    </div>
+                    <input type="text" class="form-control form-control" id="campoOrientacao" placeholder="" name="sexo">
+                    
                 </div>
 
                 <div class="col mt-3">
@@ -236,7 +236,7 @@
                     <div class="col-sm-4" >Pessoa com PCD</div>
                       <div class="col-sm-2">
                           <div class="form-check me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoPCD" id="opcaoPCDY" required>
                                   <label class="form-check-label" for="opcao1">
                                       Sim
                                   </label>
@@ -244,7 +244,7 @@
                       </div>
                       <div class="col-sm-1">
                               <div class="form-check me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" name="opcao" id="opcao1">
+                              <input class="form-check-input" type="radio" name="opcaoPCD" id="opcaoPCDN">
                                   <label class="form-check-label" for="opcao1">
                                       Não
                                   </label>
@@ -275,7 +275,7 @@
 
                     <div class="col p-3 pl-5">
                         <div class="form-check p-1 me-3" style="font-weight: 400">
-                              <input class="form-check-input" type="radio" id="pessoaf" name="pessoafj">
+                              <input class="form-check-input" type="radio" id="pessoaf" name="pessoafj" required>
                                   <label class="form-check-label" for="opcao1">
                                       Pessoa Física
                                   </label>
@@ -346,8 +346,8 @@
                     <label for="selectFormacao" class="form-select">Formação</label>
                     <select class="form-select form-select-lg w-100" id="selectFormacao" name="formacao" placeholder=" selecione" required>
                       <option>--Selecione--</option>
-                      <option>2</option>
-                      <option>3</option>
+                      <option>Diretor</option>
+                      <option>Supervisor</option>
                       <option>4</option>
                     </select>
                         <div class="invalid-feedback">
@@ -362,9 +362,9 @@
                     <label for="campoSalario" class="form-select">Média Salarial</label>
                     <select class="form-select form-select-lg w-100" id="select1" name="salario" placeholder=" selecione" required>
                       <option>--Selecione--</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
+                      <option>menor que 1 salário</option>
+                      <option>1 à 2 salários</option>
+                      <option>3 salários ou mais</option>
                     </select>
                     <br>
                   </form>
@@ -390,9 +390,11 @@
                     <label for="selectRaca" class="form-label">Opção de Raça/Etnia</label>
                     <select class="form-select form-select-lg w-100" id="selectRaca" name="etnia" placeholder=" selecione" required>
                       <option>--Selecione--</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
+                      <option>branco</option>
+                      <option>preto</option>
+                      <option>pardo</option>
+                      <option>amarelo</option>
+                      <option>indígena</option>
                     </select>
                         <div class="invalid-feedback">
                             * O campo etnia é inválido.
@@ -467,7 +469,9 @@
                         </h5>
                       </div>
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionLeft">
-                        <input class="form-control m-3" type="file" id="formFile-AnexoOneOne">
+                        <div class="card-body col-sm-12 p-3">
+                          <input class="form-control" type="file" id="formFile-AnexoOneOne">
+                        </div>
                       </div>
                     </div>
 
@@ -480,7 +484,9 @@
                         </h5>
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLeft">
-                        <input class="form-control" type="file" id="formFile-AnexoOneTwo">
+                        <div class="card-body col-sm-12 p-3">
+                          <input class="form-control" type="file" id="formFile-AnexoOneTwo">
+                        </div>
                       </div>
                     </div>
                     <div class="card">
@@ -492,7 +498,9 @@
                         </h5>
                       </div>
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLeft">
-                        <input class="form-control" type="file" id="formFile-AnexoOneThree">
+                        <div class="card-body col-sm-12 p-3">
+                          <input class="form-control" type="file" id="formFile-AnexoOneThree">
+                        </div>
                       </div>
                     </div>
                     <div class="card">
@@ -504,7 +512,9 @@
                         </h5>
                       </div>
                       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionLeft">
-                        <input class="form-control" type="file" id="formFile-AnexoOneFour">
+                        <div class="card-body col-sm-12 p-3">
+                          <input class="form-control" type="file" id="formFile-AnexoOneFour">
+                        </div>
                       </div>
                     </div>
                     <div class="card">
@@ -516,7 +526,9 @@
                         </h5>
                       </div>
                       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionLeft">
-                        <input class="form-control" type="file" id="formFile-AnexoOneFive">
+                        <div class="card-body col-sm-12 p-3">
+                          <input class="form-control" type="file" id="formFile-AnexoOneFive">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -545,7 +557,9 @@
                       </h5>
                     </div>
                     <div id="collapseTwoOne" class="collapse show" aria-labelledby="headingTwoOne" data-parent="#accordionRight">
-                      <input class="form-control" type="file" id="formFile-AnexoTwoOne">
+                      <div class="card-body col-sm-12 p-3">
+                        <input class="form-control" type="file" id="formFile-AnexoTwoOne">
+                      </div>
                     </div>
                   </div>
                   <div class="card">
@@ -557,7 +571,9 @@
                       </h5>
                     </div>
                     <div id="collapseTwoTwo" class="collapse" aria-labelledby="headingTwoTwo" data-parent="#accordionRight">
-                      <input class="form-control" type="file" id="formFile-AnexoTwoTwo">
+                      <div class="card-body col-sm-12 p-3">
+                        <input class="form-control" type="file" id="formFile-AnexoTwoTwo">
+                      </div>
                     </div>
                   </div>
                   <div class="card">
@@ -569,7 +585,9 @@
                       </h5>
                     </div>
                     <div id="collapseTwoThree" class="collapse" aria-labelledby="headingTwoThree" data-parent="#accordionRight">
-                      <input class="form-control" type="file" id="formFile-AnexoTwoThree">
+                      <div class="card-body col-sm-12 p-3">
+                        <input class="form-control" type="file" id="formFile-AnexoTwoThree">
+                      </div>
                     </div>
                   </div>
                   <div class="card">
@@ -581,7 +599,9 @@
                       </h5>
                     </div>
                     <div id="collapseTwoFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionRight">
-                      <input class="form-control" type="file" id="formFile-AnexoTwoFour">
+                      <div class="card-body col-sm-12 p-3">
+                        <input class="form-control" type="file" id="formFile-AnexoTwoFour">
+                      </div>
                     </div>
                   </div>
                   <div class="card">
@@ -593,7 +613,9 @@
                       </h5>
                     </div>
                     <div id="collapseTwoFive" class="collapse" aria-labelledby="headingTwoFive" data-parent="#accordionRight">
-                      <input class="form-control" type="file" id="formFile-AnexoTwoFive">
+                      <div class="card-body col-sm-12 p-3">
+                        <input class="form-control" type="file" id="formFile-AnexoTwoFive">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -605,7 +627,7 @@
                       Material comprobatório ex. vídeo</span>
                     <span class="text-danger">(Tamanho Máximo de 10 mb por imagem.)</span>
               
-                <input class="form-control" type="file" id="formFile-Three">
+                <input class="form-control" type="file" id="formFile-AnexoThree">
             
             </div>
       </div>
@@ -724,7 +746,7 @@
           if (!document.getElementById('campoNome').value) {
             erros.push("O campo nome é obrigatório.")
           }
-          if (!document.querySelector('input[name="opcao"]:checked')) {
+          if (!document.querySelector('input[name="opcaoSexual"]:checked')) {
             erros.push("O campo sexo é obrigatório.")
           }
           if (!document.getElementById('campoEmail').value){
@@ -774,8 +796,6 @@
           if (!anexo2.files || anexo2.files.length === 0){
             erros.push("O campo Anexo 2 é obrigatório")
           }
-
-        
 
           // Preenche a lista no modal
           const listaErros = document.getElementById('listaErros')
