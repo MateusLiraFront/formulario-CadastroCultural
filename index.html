@@ -710,7 +710,7 @@
 
               <div class="modal-body">
                 <ul id="listaErros" class="text-danger ps-3">
-                  <!-- Mensagens de erro vão aqui -->
+                  <!---- Mensagens de erro vão aqui ----->
                 </ul>
               </div>
              
@@ -763,7 +763,7 @@
           event.preventDefault()
           event.stopPropagation()
 
-          // Mensagens de erro
+       
           const erros = []
 
           if (!document.getElementById('campoNome').value) {
@@ -820,7 +820,7 @@
             erros.push("O campo Anexo 2 é obrigatório")
           }
 
-          // Preenche a lista no modal
+          
           const listaErros = document.getElementById('listaErros')
           listaErros.innerHTML = ''
           erros.forEach(erro => {
@@ -829,7 +829,7 @@
             listaErros.appendChild(li)
           })
 
-          // Mostra o modal
+          
           const modal = new bootstrap.Modal(document.getElementById('modalErros'))
           modal.show()
 
